@@ -42,7 +42,6 @@ for i in range(5):
     plt.plot(X, y_pred, c="green", lw=4)
 plt.show()
 
-
 # right value
 plt.figure()
 m = np.matmul(

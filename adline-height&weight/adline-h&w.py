@@ -29,10 +29,9 @@ Y_pred = X * m
 plt.scatter(X, Y)
 plt.plot(X, Y_pred, c='red')
 
-slope, intercept, r_value, p_value = stats.linregress(X, Y)
+# linregress output
+slope, intercept, r_value, p_value, std_err = stats.mstats.linregress(X, Y)
 
 plt.plot(X, Y, 'o', label='original data')
 plt.plot(X, intercept + slope * X, 'r', label='fitted line')
 plt.legend()
-
-plt.show()
