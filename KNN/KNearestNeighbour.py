@@ -31,3 +31,4 @@ class MyKNearestNeighbors:
             y_pred.append(y)
         not_correct = abs(sum(y_pred - y_test))
         print((((len(y_pred) - not_correct) * 100) / len(y_pred)) / 100)
+        return (y_pred, y_test), ((((len(y_pred) - not_correct) * 100) / len(y_pred)) / 100)
