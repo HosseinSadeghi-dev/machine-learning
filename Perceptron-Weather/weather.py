@@ -11,7 +11,6 @@ data['Day'] = data['Formatted Date'].dt.day
 data['Month'] = data['Formatted Date'].dt.month
 data['Year'] = data['Formatted Date'].dt.year
 data['DayOfYear'] = data['Formatted Date'].dt.dayofyear
-
 temperature_average = data.groupby(['DayOfYear', 'Year'])['Temperature (C)'].mean().reset_index()
 
 fig = plt.figure(figsize=(27, 15))
