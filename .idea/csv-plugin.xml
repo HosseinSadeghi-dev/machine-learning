@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Perceptron-Weather\csv\weatherHistory.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\covid\COVID-19-time-series-clean-complete.csv">
           <value>
             <Attribute>
