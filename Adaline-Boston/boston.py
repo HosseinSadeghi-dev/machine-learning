@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 from sklearn import datasets
-from Adaline import AdalineRegressor
+from Adaline.Adaline import AdalineRegressor
 
 data = datasets.load_boston()
 N = len(data.data[:, 0])
@@ -33,11 +33,10 @@ surf = ax.plot_surface(X_plan, Y_plan, Z, cmap=myCMap, alpha=0.5)
 fig.colorbar(surf, ax=ax, shrink=0.5, aspect=5)
 
 ax.scatter(X_train[:, 0], X_train[:, 1], Y_train, c='green')
-
 ax.set_xlabel('crime')
 ax.set_ylabel('room')
 ax.set_zlabel('Price')
-
 plt.show()
+
 result = model.evaluation(X_test, Y_test)
 print('evaluation: ', result[0], ' mae: ', result[1], ' mse: ', result[2])
